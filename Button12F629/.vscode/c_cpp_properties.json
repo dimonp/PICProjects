@@ -31,10 +31,9 @@
                 "__SDCC_PIC12F629",
                 "__at(exp)=",
                 "__code=",
-                "__sfr=",
-                "__interrupt(i)="
+                "__sfr="
             ],
-            "compilerPath": "sdcc -mpic14 -p12f629 --use-non-free",
+            "compilerPath": "sdcc.exe -mpic14 -p12f629 --use-non-free",
             "cStandard": "c11",
             "cppStandard": "c++17",
             "intelliSenseMode": "clang-x64"
