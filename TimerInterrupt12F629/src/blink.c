@@ -52,7 +52,7 @@ int main() {
     T0SE = 0;                   // Timer0 increment on rising edge
     T0CS = 0;                   // Timer0 increment from internal clock
     PSA = 0;                    // Prescaler is assigned to the Timer0 module 
-    OPTION_REGbits.PS = 0b111;  // Prescaller is 1:256
+    OPTION_REGbits.PS = 0b111;  // Prescaler is 1:256
     T0IE = 1;                   // Enable TMR0 overflow interrupt 
     GIE = 1;                    // Enable all unmasked interrupts
 

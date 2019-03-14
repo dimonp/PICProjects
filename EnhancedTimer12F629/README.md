@@ -17,5 +17,4 @@ PicKit2 programmer
 | Signal   |      Pin      |
 |----------|--------------:|
 | rst | GP3 |
-| | |
 | LED_B | GP0 |  
