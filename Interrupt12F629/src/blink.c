@@ -43,9 +43,9 @@ int main() {
     CMCON = 0b111;              // Disable comparator
 
     INTCON  = 0;
-    GIE = 1;                    // all interrupts are enabled
     GPIE = 1;                   // external interrupt enabled
     IOC4 = 1;                   // Interrupt-on-change GP4
+    GIE = 1;                    // all interrupts are enabled
     
     while(1) {
         GPIO = ledVal;
