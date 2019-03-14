@@ -19,6 +19,7 @@ uint16_t __at(_CONFIG) __CONFIG =
 
 volatile uint8_t ledVal = 0b001;
 
+// Interrupt on change switch, should be debounced.
 void interrupt(void) __interrupt(0) {
     if (GPIO4 == 0) {
         // circular left shift
@@ -39,7 +40,7 @@ int main() {
     TRISIO = 0b010000;          // GP4 pin is input, rest are output
     GPIO = 0;                   // Make all pins 0
     NOT_GPPU = 1;               // Button on GP4 has own pull-up
-    CMCON = 0b111;
+    CMCON = 0b111;              // Disable comparator
 
     INTCON  = 0;
     GIE = 1;                    // all interrupts are enabled
