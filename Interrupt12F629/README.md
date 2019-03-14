@@ -22,3 +22,4 @@ PicKit2 programmer
 | LED_B | GP0 |  
 | LED_Y | GP1 |  
 | LED_G | GP2 |  
+| BUTTON | GP4 |  
