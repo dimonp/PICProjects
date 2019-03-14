@@ -6,7 +6,6 @@
 #include <pic16fam.h>
 #include <pic16regs.h>
 #include <sdcc-lib.h>
-#include "delays.h"
 
 uint16_t __at(_CONFIG) __CONFIG = 
     _FOSC_INTRCIO & 
