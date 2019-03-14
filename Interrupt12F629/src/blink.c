@@ -37,15 +37,15 @@ int main() {
         bcf STATUS, RP0   \n \
     ");
 
+    INTCON  = 0;                // Disable interrupts
     TRISIO = 0b010000;          // GP4 pin is input, rest are output
     GPIO = 0;                   // Make all pins 0
     NOT_GPPU = 1;               // Button on GP4 has own pull-up
     CMCON = 0b111;              // Disable comparator
 
-    INTCON  = 0;
-    GIE = 1;                    // all interrupts are enabled
     GPIE = 1;                   // external interrupt enabled
     IOC4 = 1;                   // Interrupt-on-change GP4
+    GIE = 1;                    // all interrupts are enabled
     
     while(1) {
         GPIO = ledVal;
