@@ -39,7 +39,7 @@ int main() {
     // Timer1 configuration
     TMR1H = 0;                  // Clear High byte Timer1 register
     TMR1L = 0;                  // Clear Low byte Timer1 register
-    T1CONbits.T1CKPS = 0b11;    // Prescaller is 1:8
+    T1CONbits.T1CKPS = 0b11;    // Prescaler is 1:8
     TMR1CS = 0;                 // Internal clock (Fosc/4)
     TMR1ON = 1;                 // Timer1 starts to increment
 

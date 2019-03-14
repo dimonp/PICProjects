@@ -38,6 +38,8 @@ int main() {
     ");
 
     INTCON  = 0;                // Disable interrupts
+
+    // I/O pins configuration
     TRISIO = 0b010000;          // GP4 pin is input, rest are output
     GPIO = 0;                   // Make all pins 0
     NOT_GPPU = 1;               // Button on GP4 has own pull-up
