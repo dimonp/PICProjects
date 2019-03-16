@@ -14,7 +14,7 @@ LIB=-I/usr/share/sdcc/lib/$(ARCH) -I/usr/share/sdcc/non-free/lib/$(ARCH)
 SCRIPT=/usr/share/gputils/lkr/$(MCU)_g.lkr
 
 BINARY=firmware
-CFLAGS  = -m$(ARCH) -p$(MCU) $(INC) --use-non-free --opt-code-size
+CFLAGS  = -m$(ARCH) -p$(MCU) $(INC) --use-non-free --opt-code-size --debug-xtra
 LDFLAGS = -m -w -r -s $(SCRIPT) $(LIB) libsdcc.lib pic$(MCU).lib libm.lib
 PRGFLAGS = -PPIC$(MCU) -R -T -X -M
 
