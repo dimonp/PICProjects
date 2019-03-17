@@ -1,0 +1,45 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/inc/**",
+                "${SDCC_HOME}/include",
+                "${SDCC_HOME}/include/pic14",
+                "${SDCC_HOME}/non-free/include/pic14"
+            ],
+            "defines": [
+                "__SDCC_PIC16F648A",
+                "__at(exp)=",
+                "__code=",
+                "__sfr=",
+                "__interrupt(i)="
+            ],
+            "compilerPath": "sdcc -mpic14 -p16f648a --use-non-free",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64"
+        },
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/inc/**",
+                "${SDCC_HOME}/include",
+                "${SDCC_HOME}/include/pic14",
+                "${SDCC_HOME}/non-free/include/pic14"
+            ],
+            "defines": [
+                "__SDCC_PIC16F648A",
+                "__at(exp)=",
+                "__code=",
+                "__sfr=",
+                "__interrupt(i)="
+            ],
+            "compilerPath": "sdcc.exe -mpic14 -p16f648a --use-non-free",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 4
+}
