@@ -34,7 +34,7 @@ int main() {
     TMR0 = 0;                   // Clear Timer0 register
     T0IF = 0;                   // Clear overflow flag
     T0SE = 0;                   // Timer0 increment on rising edge
-    T0CS = 0;                   // Timer0 increment from internal clock
+    T0CS = 0;                   // Timer0 internal instruction cycle clock
     PSA = 0;                    // Prescaler is assigned to the Timer0 module 
     OPTION_REGbits.PS = 0b111;  // Prescaler is 1:256
 
